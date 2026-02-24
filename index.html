@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="A demo site to learn HTML">
+    <meta name="author" content="Teacher John Michael Reed">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>This is a title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <h1>This is a header. It is covered by the nav bar.</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <p> This is in the nav bar. It stays at the top. For the slides that go with this site, visit <a href="https://docs.google.com/presentation/d/1kNwcwzdXSUS-nX2bbsOJryg_qTlpJiLqSuXru6hk8_I/edit?usp=sharing">Google Slides</a></p>
+    </nav>
+
+      <!-- These are HTML headings-->
+      <h1>Heading level 1</h1>
+      <h2>Heading level 2</h2>
+      <h3>Heading level 3</h3>
+      <h4>Heading level 4</h4>
+      <h5>Heading level 5</h5>
+      <h6>Heading level 6</h6>
+
+      <div style="background-color: lightblue;">
+        <p>Hello world! This paragraph is in a light blue div!</p>
+      </div>
+      <p>This is another paragraph. There is a line break after it.</p>
+      <br>
+      <p>This is a third paragraph. There was a line break before it. There will be a horizontal ruled line after it.</p>
+      <hr>
+      <a href="https://www.google.com"> This is a link to Google. </a>
+      <p>On the next line will be an image of Shrek and Donkey from the movie Shrek:</p>
+      <img src="https://www.dreamworks.com/storage/movies/shrek/gallery/shrek-gallery-1.jpg" height="120">
+      <p>Here is an embedded song from the website Soundcloud. It is embedded as an iframe: </p>
+      <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A165303714&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/darling-gypsum" title="Darling Gypsum" target="_blank" style="color: #cccccc; text-decoration: none;">Darling Gypsum</a> · <a href="https://soundcloud.com/darling-gypsum/long-time-traveller" title="Long Time Traveller (By The Wailing Jennys)" target="_blank" style="color: #cccccc; text-decoration: none;">Long Time Traveller (By The Wailing Jennys)</a></div>
+      <p>Here is an embedded YouTube video that teaches HTML. It is embedded as an iframe: </p>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HD13eq_Pmp8?si=jcTD34h7eNZ1Pf_z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <p>This is normal text</p>
+    <!-- Note: These can be done with CSS -->
+    <p>This is <b>bold</b> text</p>
+    <p>This is <i>italic</i> text</p>
+    <p>This is <big>big</big> text</p>
+    <p>This is <small>small</small> text</p>
+    <p>This is <sub>subscript</sub> text</p>
+    <p>This is <sup>superscript</sup> text</p>
+    <p>This is <ins>inserted</ins> text</p>
+    <p>This is <del>deleted</del> text</p>
+    <p>This is <mark>marked</mark> text</p>
+    
+    <h4>Unordered List</h4>
+    <ul>
+      <li>pizza dough</li>
+      <li>tomato sauce</li>
+      <li>cheese</li>
+      <li>toppings</li>
+    </ul>
+
+    <h4>Ordered List</h4>
+    <ol>
+      <li>eat breakfast</li>
+      <li>take shower</li>
+    </ol>
+
+    <table>
+      <tr bgcolor="grey">
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tueday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+      <tr bgcolor="lightgrey">
+        <td>Closed</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>Closed</td>
+      </tr>
+    </table>
+
+    <!-- Colored text (introducing style, CSS)-->
+    <h1 style="color: red">Hello!</h1>
+    <h1 style="color: rgb(5, 240, 232)">Hello!</h1>
+    <h1 style="color: #28f005">Hello!</h1>
+
+    <div style="background-color: #444444;">
+      <h1 style="color: #28f005">Sentence with a <span style="color:red">red span</span> in it and a dark grey div around it!</h1>
+    </div>
+
+    <button onclick="doSomething()">Click me!</button>
+    <p id="test">Hello</p>
+
+
+    <footer>
+      <div class="container text-center">
+        <p>This is the footer. It stays at the bottom.</p>
+      </div>
+    </footer>
+
+    <script>
+      function doSomething(){
+        document.getElementById("test").innerHTML = "Bye!";
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+<!-- Commented out HTML taken from another website.
+
+<!DOCTYPE html>
+<html lang="">
+  <head>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Air Towers Vacation Apartment Rentals</title>
+    <meta name="description" content="Rent or buy a Sea Air Towers vacation rental apartment in Hollywood, Florida.">
+    <meta name="keywords" content="Sea Air Towers, Rent Sea Air Towers, Buy Sea Air Towers, Buy Sea Air Towers Condo, Sea Air Towers Apartments, Buy Sea Air Towers Apartment, Sea Air Towers Rentals, Rent Sea Air Towers Condo, Rent Sea Air Towers Condominium, Rent Sea Air Towers Apartment, Sea Air Towers For Rent, Real Estate, Condominium, Apartment, Rental, Rentals, Vacation Rental, Hollywood Florida Vacation Rental, Hollywood Beach Vacation Rentals, Hollywood Beach Rental, Hollywood Beach Apartments">
+    <meta name="theme-color" content="#4DA5F4">
+    <meta name="csrf-token">
+
+    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    
+
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container"><a class="navbar-brand" href="index.html"><i class="fa fa-home"></i>Go to home page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse">
+          <div class="dropdown-divider"></div>
+          <ul class="nav navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="mobile-app-shortcut.html">Mobile App Shortcut</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact The Developer</a></li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="account/update-listing.html">Landlord's Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="signup.html">Create Account</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container pl-sm-0 pr-sm-0 pl-lg-3 pr-lg-3">
+      <h1 class="text-center">Sea Air Towers Vacation Rentals and Sales</h1>
+      <p class="lead text-center">Save 5-10% off VRBO prices by renting or buying directly from landlords of Sea Air Towers</p>
+      <p class="lead text-center">(30 day minimum)</p>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <h2 class="text-center"> 
+            <u><a href="search-for-apartments.html" style="color:black;">Search</a></u>
+          </h2>
+          <p class="text-center"> <a href="search-for-apartments.html">Search for apartments by number of bedrooms, number of bathrooms, and dates of availability.</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="text-center"> 
+            <u><a href="account/list-apartment.html" style="color:black;">List</a></u>
+          </h2>
+          <p class="text-center"> <a href="account/list-apartment.html">Landlords, list your apartment [sign in required].</a></p>
+        </div>
+        <div class="col-sm-6">
+          <h2 class="text-center"> 
+            <u><a href="account/update-listing.html" style="color:black;">Update Listing</a></u>
+          </h2>
+          <p class="text-center"> <a href="account/update-listing.html">Landlords, update your apartment or its availability [sign in required].</a></p>
+        </div>
+      </div>
+      <hr>
+      <div class="row justify-content-center">
+        <div class="carousel slide" id="carouselExampleControls" data-ride="carousel" style="height: auto; width: 886px !important;">
+          <div class="carousel-inner">
+            <div class="carousel-item active"><img class="d-block w-100" src="images/IMG-1783.jpg" alt="Image 1 of Sea Air Towers condominium"></div>
+            <div class="carousel-item"><img class="d-block w-100" src="images/IMG-1813.jpg" alt="Image 2 of Sea Air Towers condominium"></div>
+            <div class="carousel-item"><img class="d-block w-100" src="images/7-25.jpg" alt="Image 3 of Sea Air Towers condominium"></div>
+            <div class="carousel-item"><img class="d-block w-100" src="images/7-25-1.jpg" alt="Image 4 of Sea Air Towers condominium"></div>
+            <div class="carousel-item"><img class="d-block w-100" src="images/IMG-6137-1.jpg" alt="Image 5 of Sea Air Towers condominium"></div>
+            <div class="carousel-item"><img class="d-block w-100" src="images/z.jpg" alt="Image 6 of Sea Air Towers condominium"></div>
+          </div><a class="carousel-control-prev" href="index.html#carouselExampleControls" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="index.html#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+        </div>
+      </div>
+      <p class="text-center">Tap the left (⬅️) or right (➡️) arrows on the left or right edges of the above photo to scroll horizontally through the photo carousel.</p>
+      <hr>
+      <h2 class="text-center"> 
+        <u>Location</u><br style="display:block; margin: 5px 0;">
+        <div class="row justify-content-center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.333470043927!2d-80.12038088601203!3d25.989891505463074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9ab5e5a4e20a9%3A0xc9b1f1231a79bbd9!2sSea%20Air%20Towers!5e0!3m2!1sen!2sus!4v1578549406853!5m2!1sen!2sus" width="886" height="487" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </h2>
+      <p class="text-center">Address: 3725 S Ocean Dr, Hollywood, FL 33019</p>
+    </div>
+    <footer>
+      <div class="container text-center">
+        <p>For the building's main site, go to: <a href="http://www.seaairtowers.org/">http://www.seaairtowers.org/</a></p>
+      </div>
+    </footer>
+    <script src="js/lib/jquery-3.1.1.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="js/main.js"></script>
+
+    
+
+  </body>
+</html>
+
+--<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="A demo site to learn HTML">
+    <meta name="author" content="Teacher John Michael Reed">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>This is a title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <h1>This is a header. It is covered by the nav bar.</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <p> This is in the nav bar. It stays at the top. For the slides that go with this site, visit <a href="https://docs.google.com/presentation/d/1kNwcwzdXSUS-nX2bbsOJryg_qTlpJiLqSuXru6hk8_I/edit?usp=sharing">Google Slides</a></p>
+    </nav>
+
+      <!-- These are HTML headings-->
+      <h1>Heading level 1</h1>
+      <h2>Heading level 2</h2>
+      <h3>Heading level 3</h3>
+      <h4>Heading level 4</h4>
+      <h5>Heading level 5</h5>
+      <h6>Heading level 6</h6>
+
+      <div style="background-color: lightblue;">
+        <p>Hello world! This paragraph is in a light blue div!</p>
+      </div>
+      <p>This is another paragraph. There is a line break after it.</p>
+      <br>
+      <p>This is a third paragraph. There was a line break before it. There will be a horizontal ruled line after it.</p>
+      <hr>
+      <a href="https://www.google.com"> This is a link to Google. </a>
+      <p>On the next line will be an image of Shrek and Donkey from the movie Shrek:</p>
+      <img src="https://www.dreamworks.com/storage/movies/shrek/gallery/shrek-gallery-1.jpg" height="120">
+      <p>Here is an embedded song from the website Soundcloud. It is embedded as an iframe: </p>
+      <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A165303714&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/darling-gypsum" title="Darling Gypsum" target="_blank" style="color: #cccccc; text-decoration: none;">Darling Gypsum</a> · <a href="https://soundcloud.com/darling-gypsum/long-time-traveller" title="Long Time Traveller (By The Wailing Jennys)" target="_blank" style="color: #cccccc; text-decoration: none;">Long Time Traveller (By The Wailing Jennys)</a></div>
+      <p>Here is an embedded YouTube video that teaches HTML. It is embedded as an iframe: </p>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HD13eq_Pmp8?si=jcTD34h7eNZ1Pf_z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <p>This is normal text</p>
+    <!-- Note: These can be done with CSS -->
+    <p>This is <b>bold</b> text</p>
+    <p>This is <i>italic</i> text</p>
+    <p>This is <big>big</big> text</p>
+    <p>This is <small>small</small> text</p>
+    <p>This is <sub>subscript</sub> text</p>
+    <p>This is <sup>superscript</sup> text</p>
+    <p>This is <ins>inserted</ins> text</p>
+    <p>This is <del>deleted</del> text</p>
+    <p>This is <mark>marked</mark> text</p>
+    
+    <h4>Unordered List</h4>
+    <ul>
+      <li>pizza dough</li>
+      <li>tomato sauce</li>
+      <li>cheese</li>
+      <li>toppings</li>
+    </ul>
+
+    <h4>Ordered List</h4>
+    <ol>
+      <li>eat breakfast</li>
+      <li>take shower</li>
+    </ol>
+
+    <table>
+      <tr bgcolor="grey">
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tueday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+      <tr bgcolor="lightgrey">
+        <td>Closed</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>Closed</td>
+      </tr>
+    </table>
+
+    <!-- Colored text (introducing style, CSS)-->
+    <h1 style="color: red">Hello!</h1>
+    <h1 style="color: rgb(5, 240, 232)">Hello!</h1>
+    <h1 style="color: #28f005">Hello!</h1>
+
+    <div style="background-color: #444444;">
+      <h1 style="color: #28f005">Sentence with a <span style="color:red">red span</span> in it and a dark grey div around it!</h1>
+    </div>
+
+    <button onclick="doSomething()">Click me!</button>
+    <p id="test">Hello</p>
+
+
+    <footer>
+      <div class="container text-center">
+        <p>This is the footer. It stays at the bottom.</p>
+      </div>
+    </footer>
+
+    <script>
+      function doSomething(){
+        document.getElementById("test").innerHTML = "Bye!";
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
